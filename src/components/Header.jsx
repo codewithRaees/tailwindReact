@@ -5,7 +5,7 @@ import Model from "./Model";
 const Header = () => {
   const [isOpen, setisOpen] = useState(false);
   return (
-    <header className=" flex justify-between px-5   py-4  shadow  sm:px-4  md:px-5">
+    <header className=" flex justify-between px-5   py-4  shadow  sm:px-2  md:px-5">
       <img src={viteLogo} alt="Logo" />
       <ul className="flex gap-7  ">
         <li>
