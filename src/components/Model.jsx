@@ -6,8 +6,12 @@ const Model = ({ isOpen, setisOpen }) => {
       className={`fixed inset-0 flex items-center justify-center   bg-black/40 px-4 ${
         isOpen ? "" : "hidden"
       }`}
+      onClick={() => setisOpen(false)}
     >
-      <div className="   max-w-fit flex-1 flex-col rounded-md bg-white px-6 shadow  lg:px-8">
+      <div
+        className="   max-w-fit flex-1 flex-col rounded-md bg-white px-6 shadow  lg:px-8"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-10 w-auto"
